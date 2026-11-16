@@ -19,7 +19,7 @@ how you are doing.
 This is a working app that one person built for himself without writing any code. He described
 what he wanted to an AI (Claude Code), tried it, and said what was wrong. It is shared so you can
 do the same. **Every number, name and note in this copy is made up.** It has a sister: a
-[project dashboard](https://github.com/brianrenshaw/robot-productivity-template) built the same
+[project dashboard](https://github.com/brianrenshaw/robot-dashboard-template) built the same
 way for tasks and people.
 
 ![The overview page, with made-up data](docs/screenshots/overview.png)
