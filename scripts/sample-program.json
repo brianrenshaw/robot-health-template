@@ -1,0 +1,847 @@
+{
+ "name": "Sample full-body program (made up)",
+ "notes": "A made-up four-week program so the coach has something to show. Replace it with your own: see SETUP.md.",
+ "cycle_days": 7,
+ "sessions": [
+  {
+   "week": 1,
+   "position": 1,
+   "name": "Full Body A",
+   "block": "Sample block",
+   "week_note": null,
+   "rest_after": false,
+   "exercises": [
+    {
+     "name": "Back Squat",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "8-10",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "2-3 min",
+     "sub1": "Leg Press",
+     "sub2": "Goblet Squat",
+     "notes": "Sit back and down; keep your chest up."
+    },
+    {
+     "name": "Bench Press",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "8-10",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "2-3 min",
+     "sub1": "Dumbbell Press",
+     "sub2": "Machine Chest Press",
+     "notes": "Shoulder blades back and down."
+    },
+    {
+     "name": "Seated Cable Row",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "10-12",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1-2 min",
+     "sub1": "Chest-Supported Row",
+     "sub2": "One-Arm Dumbbell Row",
+     "notes": "Pull your elbows to your hips."
+    },
+    {
+     "name": "Lateral Raise",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "12-15",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1 min",
+     "sub1": "Cable Lateral Raise",
+     "sub2": "Machine Lateral Raise",
+     "notes": "Lead with the elbows."
+    },
+    {
+     "name": "Plank",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "30-45 sec",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1 min",
+     "sub1": "Dead Bug",
+     "sub2": "Side Plank",
+     "notes": "Squeeze your glutes; do not let the hips sag."
+    }
+   ]
+  },
+  {
+   "week": 1,
+   "position": 2,
+   "name": "Full Body B",
+   "block": "Sample block",
+   "week_note": null,
+   "rest_after": false,
+   "exercises": [
+    {
+     "name": "Romanian Deadlift",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "8-10",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "2-3 min",
+     "sub1": "Dumbbell Romanian Deadlift",
+     "sub2": "Hip Thrust",
+     "notes": "Push your hips back; soft knees."
+    },
+    {
+     "name": "Overhead Press",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "8-10",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "2-3 min",
+     "sub1": "Seated Dumbbell Press",
+     "sub2": "Machine Shoulder Press",
+     "notes": "Brace before each rep."
+    },
+    {
+     "name": "Lat Pulldown",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "10-12",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1-2 min",
+     "sub1": "Pull-Up",
+     "sub2": "Assisted Pull-Up",
+     "notes": "Pull the bar to your upper chest."
+    },
+    {
+     "name": "Walking Lunge",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "10-12",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1-2 min",
+     "sub1": "Split Squat",
+     "sub2": "Step-Up",
+     "notes": "Long steps; front knee over the foot."
+    },
+    {
+     "name": "Cable Crunch",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "12-15",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1 min",
+     "sub1": "Hanging Knee Raise",
+     "sub2": "Crunch",
+     "notes": "Curl the ribs toward the hips."
+    }
+   ]
+  },
+  {
+   "week": 1,
+   "position": 3,
+   "name": "Full Body C",
+   "block": "Sample block",
+   "week_note": null,
+   "rest_after": true,
+   "exercises": [
+    {
+     "name": "Leg Press",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "10-12",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "2 min",
+     "sub1": "Hack Squat",
+     "sub2": "Goblet Squat",
+     "notes": "Lower until the knees reach about 90 degrees."
+    },
+    {
+     "name": "Incline Dumbbell Press",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "8-10",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "2 min",
+     "sub1": "Incline Bench Press",
+     "sub2": "Push-Up",
+     "notes": "A low incline, about 30 degrees."
+    },
+    {
+     "name": "Chest-Supported Row",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "10-12",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1-2 min",
+     "sub1": "Seated Cable Row",
+     "sub2": "Barbell Row",
+     "notes": "Pause at the top."
+    },
+    {
+     "name": "Dumbbell Curl",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "10-12",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1 min",
+     "sub1": "Cable Curl",
+     "sub2": "Hammer Curl",
+     "notes": "No swinging."
+    },
+    {
+     "name": "Triceps Pushdown",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "10-12",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1 min",
+     "sub1": "Overhead Triceps Extension",
+     "sub2": "Dips",
+     "notes": "Keep the elbows still at your sides."
+    }
+   ]
+  },
+  {
+   "week": 2,
+   "position": 1,
+   "name": "Full Body A",
+   "block": "Sample block",
+   "week_note": null,
+   "rest_after": false,
+   "exercises": [
+    {
+     "name": "Back Squat",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "8-10",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "2-3 min",
+     "sub1": "Leg Press",
+     "sub2": "Goblet Squat",
+     "notes": "Sit back and down; keep your chest up."
+    },
+    {
+     "name": "Bench Press",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "8-10",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "2-3 min",
+     "sub1": "Dumbbell Press",
+     "sub2": "Machine Chest Press",
+     "notes": "Shoulder blades back and down."
+    },
+    {
+     "name": "Seated Cable Row",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "10-12",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1-2 min",
+     "sub1": "Chest-Supported Row",
+     "sub2": "One-Arm Dumbbell Row",
+     "notes": "Pull your elbows to your hips."
+    },
+    {
+     "name": "Lateral Raise",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "12-15",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1 min",
+     "sub1": "Cable Lateral Raise",
+     "sub2": "Machine Lateral Raise",
+     "notes": "Lead with the elbows."
+    },
+    {
+     "name": "Plank",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "30-45 sec",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1 min",
+     "sub1": "Dead Bug",
+     "sub2": "Side Plank",
+     "notes": "Squeeze your glutes; do not let the hips sag."
+    }
+   ]
+  },
+  {
+   "week": 2,
+   "position": 2,
+   "name": "Full Body B",
+   "block": "Sample block",
+   "week_note": null,
+   "rest_after": false,
+   "exercises": [
+    {
+     "name": "Romanian Deadlift",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "8-10",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "2-3 min",
+     "sub1": "Dumbbell Romanian Deadlift",
+     "sub2": "Hip Thrust",
+     "notes": "Push your hips back; soft knees."
+    },
+    {
+     "name": "Overhead Press",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "8-10",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "2-3 min",
+     "sub1": "Seated Dumbbell Press",
+     "sub2": "Machine Shoulder Press",
+     "notes": "Brace before each rep."
+    },
+    {
+     "name": "Lat Pulldown",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "10-12",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1-2 min",
+     "sub1": "Pull-Up",
+     "sub2": "Assisted Pull-Up",
+     "notes": "Pull the bar to your upper chest."
+    },
+    {
+     "name": "Walking Lunge",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "10-12",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1-2 min",
+     "sub1": "Split Squat",
+     "sub2": "Step-Up",
+     "notes": "Long steps; front knee over the foot."
+    },
+    {
+     "name": "Cable Crunch",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "12-15",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1 min",
+     "sub1": "Hanging Knee Raise",
+     "sub2": "Crunch",
+     "notes": "Curl the ribs toward the hips."
+    }
+   ]
+  },
+  {
+   "week": 2,
+   "position": 3,
+   "name": "Full Body C",
+   "block": "Sample block",
+   "week_note": null,
+   "rest_after": true,
+   "exercises": [
+    {
+     "name": "Leg Press",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "10-12",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "2 min",
+     "sub1": "Hack Squat",
+     "sub2": "Goblet Squat",
+     "notes": "Lower until the knees reach about 90 degrees."
+    },
+    {
+     "name": "Incline Dumbbell Press",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "8-10",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "2 min",
+     "sub1": "Incline Bench Press",
+     "sub2": "Push-Up",
+     "notes": "A low incline, about 30 degrees."
+    },
+    {
+     "name": "Chest-Supported Row",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "10-12",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1-2 min",
+     "sub1": "Seated Cable Row",
+     "sub2": "Barbell Row",
+     "notes": "Pause at the top."
+    },
+    {
+     "name": "Dumbbell Curl",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "10-12",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1 min",
+     "sub1": "Cable Curl",
+     "sub2": "Hammer Curl",
+     "notes": "No swinging."
+    },
+    {
+     "name": "Triceps Pushdown",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "10-12",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1 min",
+     "sub1": "Overhead Triceps Extension",
+     "sub2": "Dips",
+     "notes": "Keep the elbows still at your sides."
+    }
+   ]
+  },
+  {
+   "week": 3,
+   "position": 1,
+   "name": "Full Body A",
+   "block": "Sample block",
+   "week_note": null,
+   "rest_after": false,
+   "exercises": [
+    {
+     "name": "Back Squat",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "8-10",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "2-3 min",
+     "sub1": "Leg Press",
+     "sub2": "Goblet Squat",
+     "notes": "Sit back and down; keep your chest up."
+    },
+    {
+     "name": "Bench Press",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "8-10",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "2-3 min",
+     "sub1": "Dumbbell Press",
+     "sub2": "Machine Chest Press",
+     "notes": "Shoulder blades back and down."
+    },
+    {
+     "name": "Seated Cable Row",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "10-12",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1-2 min",
+     "sub1": "Chest-Supported Row",
+     "sub2": "One-Arm Dumbbell Row",
+     "notes": "Pull your elbows to your hips."
+    },
+    {
+     "name": "Lateral Raise",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "12-15",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1 min",
+     "sub1": "Cable Lateral Raise",
+     "sub2": "Machine Lateral Raise",
+     "notes": "Lead with the elbows."
+    },
+    {
+     "name": "Plank",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "30-45 sec",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1 min",
+     "sub1": "Dead Bug",
+     "sub2": "Side Plank",
+     "notes": "Squeeze your glutes; do not let the hips sag."
+    }
+   ]
+  },
+  {
+   "week": 3,
+   "position": 2,
+   "name": "Full Body B",
+   "block": "Sample block",
+   "week_note": null,
+   "rest_after": false,
+   "exercises": [
+    {
+     "name": "Romanian Deadlift",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "8-10",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "2-3 min",
+     "sub1": "Dumbbell Romanian Deadlift",
+     "sub2": "Hip Thrust",
+     "notes": "Push your hips back; soft knees."
+    },
+    {
+     "name": "Overhead Press",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "8-10",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "2-3 min",
+     "sub1": "Seated Dumbbell Press",
+     "sub2": "Machine Shoulder Press",
+     "notes": "Brace before each rep."
+    },
+    {
+     "name": "Lat Pulldown",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "10-12",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1-2 min",
+     "sub1": "Pull-Up",
+     "sub2": "Assisted Pull-Up",
+     "notes": "Pull the bar to your upper chest."
+    },
+    {
+     "name": "Walking Lunge",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "10-12",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1-2 min",
+     "sub1": "Split Squat",
+     "sub2": "Step-Up",
+     "notes": "Long steps; front knee over the foot."
+    },
+    {
+     "name": "Cable Crunch",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "12-15",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1 min",
+     "sub1": "Hanging Knee Raise",
+     "sub2": "Crunch",
+     "notes": "Curl the ribs toward the hips."
+    }
+   ]
+  },
+  {
+   "week": 3,
+   "position": 3,
+   "name": "Full Body C",
+   "block": "Sample block",
+   "week_note": null,
+   "rest_after": true,
+   "exercises": [
+    {
+     "name": "Leg Press",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "10-12",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "2 min",
+     "sub1": "Hack Squat",
+     "sub2": "Goblet Squat",
+     "notes": "Lower until the knees reach about 90 degrees."
+    },
+    {
+     "name": "Incline Dumbbell Press",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "8-10",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "2 min",
+     "sub1": "Incline Bench Press",
+     "sub2": "Push-Up",
+     "notes": "A low incline, about 30 degrees."
+    },
+    {
+     "name": "Chest-Supported Row",
+     "warmup_sets": "1-2",
+     "working_sets": 3,
+     "reps": "10-12",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1-2 min",
+     "sub1": "Seated Cable Row",
+     "sub2": "Barbell Row",
+     "notes": "Pause at the top."
+    },
+    {
+     "name": "Dumbbell Curl",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "10-12",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1 min",
+     "sub1": "Cable Curl",
+     "sub2": "Hammer Curl",
+     "notes": "No swinging."
+    },
+    {
+     "name": "Triceps Pushdown",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "10-12",
+     "early_rpe": "7",
+     "last_rpe": "8-9",
+     "rest": "1 min",
+     "sub1": "Overhead Triceps Extension",
+     "sub2": "Dips",
+     "notes": "Keep the elbows still at your sides."
+    }
+   ]
+  },
+  {
+   "week": 4,
+   "position": 1,
+   "name": "Full Body A",
+   "block": "Sample block",
+   "week_note": "Deload week: one set fewer, stop well short of failure.",
+   "rest_after": false,
+   "exercises": [
+    {
+     "name": "Back Squat",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "8-10",
+     "early_rpe": "6",
+     "last_rpe": "7",
+     "rest": "2-3 min",
+     "sub1": "Leg Press",
+     "sub2": "Goblet Squat",
+     "notes": "Sit back and down; keep your chest up."
+    },
+    {
+     "name": "Bench Press",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "8-10",
+     "early_rpe": "6",
+     "last_rpe": "7",
+     "rest": "2-3 min",
+     "sub1": "Dumbbell Press",
+     "sub2": "Machine Chest Press",
+     "notes": "Shoulder blades back and down."
+    },
+    {
+     "name": "Seated Cable Row",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "10-12",
+     "early_rpe": "6",
+     "last_rpe": "7",
+     "rest": "1-2 min",
+     "sub1": "Chest-Supported Row",
+     "sub2": "One-Arm Dumbbell Row",
+     "notes": "Pull your elbows to your hips."
+    },
+    {
+     "name": "Lateral Raise",
+     "warmup_sets": "1-2",
+     "working_sets": 1,
+     "reps": "12-15",
+     "early_rpe": "6",
+     "last_rpe": "7",
+     "rest": "1 min",
+     "sub1": "Cable Lateral Raise",
+     "sub2": "Machine Lateral Raise",
+     "notes": "Lead with the elbows."
+    },
+    {
+     "name": "Plank",
+     "warmup_sets": "1-2",
+     "working_sets": 1,
+     "reps": "30-45 sec",
+     "early_rpe": "6",
+     "last_rpe": "7",
+     "rest": "1 min",
+     "sub1": "Dead Bug",
+     "sub2": "Side Plank",
+     "notes": "Squeeze your glutes; do not let the hips sag."
+    }
+   ]
+  },
+  {
+   "week": 4,
+   "position": 2,
+   "name": "Full Body B",
+   "block": "Sample block",
+   "week_note": "Deload week: one set fewer, stop well short of failure.",
+   "rest_after": false,
+   "exercises": [
+    {
+     "name": "Romanian Deadlift",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "8-10",
+     "early_rpe": "6",
+     "last_rpe": "7",
+     "rest": "2-3 min",
+     "sub1": "Dumbbell Romanian Deadlift",
+     "sub2": "Hip Thrust",
+     "notes": "Push your hips back; soft knees."
+    },
+    {
+     "name": "Overhead Press",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "8-10",
+     "early_rpe": "6",
+     "last_rpe": "7",
+     "rest": "2-3 min",
+     "sub1": "Seated Dumbbell Press",
+     "sub2": "Machine Shoulder Press",
+     "notes": "Brace before each rep."
+    },
+    {
+     "name": "Lat Pulldown",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "10-12",
+     "early_rpe": "6",
+     "last_rpe": "7",
+     "rest": "1-2 min",
+     "sub1": "Pull-Up",
+     "sub2": "Assisted Pull-Up",
+     "notes": "Pull the bar to your upper chest."
+    },
+    {
+     "name": "Walking Lunge",
+     "warmup_sets": "1-2",
+     "working_sets": 1,
+     "reps": "10-12",
+     "early_rpe": "6",
+     "last_rpe": "7",
+     "rest": "1-2 min",
+     "sub1": "Split Squat",
+     "sub2": "Step-Up",
+     "notes": "Long steps; front knee over the foot."
+    },
+    {
+     "name": "Cable Crunch",
+     "warmup_sets": "1-2",
+     "working_sets": 1,
+     "reps": "12-15",
+     "early_rpe": "6",
+     "last_rpe": "7",
+     "rest": "1 min",
+     "sub1": "Hanging Knee Raise",
+     "sub2": "Crunch",
+     "notes": "Curl the ribs toward the hips."
+    }
+   ]
+  },
+  {
+   "week": 4,
+   "position": 3,
+   "name": "Full Body C",
+   "block": "Sample block",
+   "week_note": "Deload week: one set fewer, stop well short of failure.",
+   "rest_after": true,
+   "exercises": [
+    {
+     "name": "Leg Press",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "10-12",
+     "early_rpe": "6",
+     "last_rpe": "7",
+     "rest": "2 min",
+     "sub1": "Hack Squat",
+     "sub2": "Goblet Squat",
+     "notes": "Lower until the knees reach about 90 degrees."
+    },
+    {
+     "name": "Incline Dumbbell Press",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "8-10",
+     "early_rpe": "6",
+     "last_rpe": "7",
+     "rest": "2 min",
+     "sub1": "Incline Bench Press",
+     "sub2": "Push-Up",
+     "notes": "A low incline, about 30 degrees."
+    },
+    {
+     "name": "Chest-Supported Row",
+     "warmup_sets": "1-2",
+     "working_sets": 2,
+     "reps": "10-12",
+     "early_rpe": "6",
+     "last_rpe": "7",
+     "rest": "1-2 min",
+     "sub1": "Seated Cable Row",
+     "sub2": "Barbell Row",
+     "notes": "Pause at the top."
+    },
+    {
+     "name": "Dumbbell Curl",
+     "warmup_sets": "1-2",
+     "working_sets": 1,
+     "reps": "10-12",
+     "early_rpe": "6",
+     "last_rpe": "7",
+     "rest": "1 min",
+     "sub1": "Cable Curl",
+     "sub2": "Hammer Curl",
+     "notes": "No swinging."
+    },
+    {
+     "name": "Triceps Pushdown",
+     "warmup_sets": "1-2",
+     "working_sets": 1,
+     "reps": "10-12",
+     "early_rpe": "6",
+     "last_rpe": "7",
+     "rest": "1 min",
+     "sub1": "Overhead Triceps Extension",
+     "sub2": "Dips",
+     "notes": "Keep the elbows still at your sides."
+    }
+   ]
+  }
+ ]
+}

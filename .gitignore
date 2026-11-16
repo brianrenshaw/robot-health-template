@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.wrangler/
+.dev.vars
+*.local
+apps/web/dist/
+workers/app/src/web-assets.generated.ts
+.DS_Store
+coverage/
+# Database copies never go to GitHub. Backups live in the private R2 bucket (see CLAUDE.md).
+*.sql.gz
+*.sqlite
+*.db
+backups/
+
+# Program spreadsheets and anything parsed from them are copyrighted and stay out of the repo.
+*.xlsx
+*.xls
+program*.json

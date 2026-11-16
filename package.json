@@ -1,0 +1,35 @@
+{
+  "name": "health",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/core",
+    "apps/web",
+    "workers/app",
+    "workers/mcp"
+  ],
+  "scripts": {
+    "typecheck": "npm run build:web && npm run typecheck --workspaces --if-present && tsc -p scripts/tsconfig.json",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "build:web": "npm run build -w apps/web && tsx scripts/embed-web.ts",
+    "dev:web": "npm run dev -w apps/web",
+    "dev:app": "npm run dev -w workers/app",
+    "db:migrate:local": "wrangler d1 migrations apply health --local -c workers/app/wrangler.jsonc",
+    "db:migrate:remote": "wrangler d1 migrations apply health --remote -c workers/app/wrangler.jsonc",
+    "deploy": "npm run build:web && npm run db:migrate:remote && npm run deploy -w workers/app && npm run deploy -w workers/mcp",
+    "dev:mcp": "npm run dev -w workers/mcp"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261113.1",
+    "@types/node": "^26.6.6",
+    "eslint": "^10.14.0",
+    "prettier": "^3.10.1",
+    "tsx": "^4.23.15",
+    "typescript": "5.9",
+    "typescript-eslint": "^8.72.2",
+    "vitest": "^5.1.0",
+    "wrangler": "^4.161.0"
+  }
+}

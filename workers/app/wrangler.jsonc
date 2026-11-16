@@ -1,0 +1,41 @@
+// The health Worker: serves the page (bundled in by scripts/embed-web.ts) and the /api routes,
+// and makes the nightly backup. Protected by Cloudflare Access.
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "health",
+  // The owner's Cloudflare account. Not a secret; it only says which account to deploy to.
+  "account_id": "YOUR_ACCOUNT_ID",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+  // One address only. The workers.dev address and preview addresses are switched off so there is
+  // no second way in that the Cloudflare Access login does not cover.
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [{ "pattern": "health.YOUR-DOMAIN.com", "custom_domain": true }],
+  // Once a night at 08:15 UTC (3:15 AM in New York in winter, 4:15 AM in summer) the Worker
+  // copies the database to the bucket below (src/index.ts `scheduled`, packages/core/src/backup.ts).
+  "triggers": { "crons": ["15 8 * * *"] },
+  // Its own database. Nothing is shared with any other project.
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "health",
+      "database_id": "YOUR_D1_DATABASE_ID",
+      "migrations_dir": "../../migrations"
+    }
+  ],
+  // A private bucket (no public address) that holds the newest 30 nightly copies.
+  "r2_buckets": [{ "binding": "BACKUPS", "bucket_name": "health-backups" }],
+  "vars": {
+    // "production" means the login is required. The local dev bypass only works when this is
+    // "local" AND the request comes from localhost (packages/core/src/access.ts).
+    "ENVIRONMENT": "production",
+    // Cloudflare Access (Zero Trust team "YOUR-TEAM", app "Health").
+    // OWNER_EMAIL is a Worker secret (wrangler secret put OWNER_EMAIL). If any of these is
+    // missing, the Worker refuses every request.
+    "ACCESS_TEAM_DOMAIN": "YOUR-TEAM.cloudflareaccess.com",
+    "ACCESS_AUD": "YOUR_ACCESS_AUD"
+  },
+  "observability": { "enabled": true }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "@health/app-worker",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@health/core": "*",
+    "hono": "^4.13.18"
+  }
+}

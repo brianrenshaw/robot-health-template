@@ -1,0 +1,41 @@
+// The chatbot Worker: the door the owner's chatbot (Claude on his phone and the web) uses to read and
+// update his health records. It is an MCP server at /mcp.
+// /mcp needs an OAuth token, which a chat app only gets after the owner signs in through Cloudflare
+// Access on the /authorize page and presses Allow. There is no other key.
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "health-mcp",
+  // The owner's Cloudflare account. Not a secret; it only says which account to deploy to.
+  "account_id": "YOUR_ACCOUNT_ID",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-01",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  // On workers.dev on purpose, like the project dashboard's chatbot Worker: it is the address
+  // confirmed to work with Claude's connector, and nothing on the YOUR-DOMAIN.com zone can get
+  // in the way of the chat app's requests.
+  "workers_dev": true,
+  "preview_urls": false,
+  // The same database as the page. Migrations are applied through workers/app.
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "health",
+      "database_id": "YOUR_D1_DATABASE_ID",
+      "migrations_dir": "../../migrations"
+    }
+  ],
+  "vars": {
+    "ENVIRONMENT": "production",
+    // Troubleshooting aid for a chat app that will not connect: set to "1" and deploy to record
+    // each sign-in request (never tokens, never anything sent to /mcp) in oauth_kv under debug:*
+    // for one day. Leave at "0" normally.
+    "DEBUG_LOG": "0",
+    "APP_URL": "https://health.YOUR-DOMAIN.com",
+    "PUBLIC_URL": "https://health-mcp.YOUR-SUBDOMAIN.workers.dev",
+    // Cloudflare Access protects only the /authorize path (Access app "Health chatbot sign-in").
+    // OWNER_EMAIL is a Worker secret. If any of these is missing, /authorize refuses.
+    "ACCESS_TEAM_DOMAIN": "YOUR-TEAM.cloudflareaccess.com",
+    "ACCESS_AUD": "YOUR_MCP_ACCESS_AUD"
+  },
+  "observability": { "enabled": true }
+}
