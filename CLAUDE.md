@@ -602,7 +602,7 @@ This is the face that matters most. Everything is in `workers/mcp/src/tools.ts`.
     replaces it.
   - `get_macro_targets` (read): the targets now and every check-in, or those in a range.
   - `read_me_first` (read): returns `INSTRUCTIONS`, for a chat app that does not pass a server's
-    instructions to its model (added for Grok, 2026-11-16; Claude does not need it).
+    instructions to its model (added for GrokBot, 2026-11-16; Claude does not need it).
 - **Receipts.** Every write returns `receipt` (one plain line, e.g. "Saved Nov 13 to Nov 15:
   daily numbers for 3 days, 2 weigh-ins, 4 workouts (1 new).") and `url`.
 
@@ -616,18 +616,18 @@ the database), never in one app's settings or memory, and never assume the app i
 another app's Apple Health tool returns a different shape, make `save_health_data` accept it on
 the server rather than asking the app to reshape numbers.
 
-**More than one chat app.** He also uses Grok (2026-11-16: "I want to make sure that it's kind
+**More than one chat app.** He also uses GrokBot (2026-11-16: "I want to make sure that it's kind
 of flawless between me using Claude and me using Grokbot or whatever"). The server is not tied
 to Claude: any app that speaks MCP with OAuth can connect, each registers itself, and its changes
 are recorded as `mcp:<app>` (undo works from any of them). What makes it seamless:
 - The record is the shared memory; the instructions say so, and to read it before answering.
-- Only an app on his iPhone with an Apple Health tool can sync (Claude can; ChatGPT may). Any
+- Only an app on his iPhone with an Apple Health tool can sync (Claude and ChatGPT can; GrokBot cannot yet). Any
   other app says so and sends him there to sync; everything else (coaching, logging, planning, targets from a screenshot,
   reviews, the library) works the same.
 - An app that does not pass the server's instructions to its model has `read_me_first`.
-- **Grok:** at grok.com/connectors in a browser, New Connector, Custom, paste
+- **GrokBot:** at grok.com/connectors in a browser, New Connector, Custom, paste
   `https://health-mcp.YOUR-SUBDOMAIN.workers.dev/mcp`, sign in with the PIN, press Allow. If it
-  fails, set `DEBUG_LOG` (below) and look at what Grok asked for. Grok also lets him give a connector its own instructions; leave those empty so the
+  fails, set `DEBUG_LOG` (below) and look at what GrokBot asked for. GrokBot also lets him give a connector its own instructions; leave those empty so the
   server's own are used.
 
 **Connecting Claude to it** (The owner does this once): at claude.ai/settings/connectors in a

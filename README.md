@@ -1,6 +1,6 @@
 # Robot health: track your health by talking to a chatbot, see it on a dashboard
 
-You keep your health record by talking to your AI chatbot: Claude, ChatGPT, Grok, or any
+You keep your health record by talking to your AI chatbot: Claude, ChatGPT, GrokBot, or any
 assistant that can add an MCP connector. "Update my health page." "What are my lifts today?"
 "Leg press 270 for 8, 8, 7." "How was my week?" The chatbot reads and writes one database that
 you own, on your own Cloudflare account.
@@ -32,7 +32,7 @@ Connect it once (see "Make your own"). From then on, every chat knows how the re
 because the server hands your chatbot standing instructions when it connects.
 
 - **"Update my health page."** The chatbot reads Apple Health on your iPhone with its own Apple
-  Health tool (the Claude app has one) and saves the numbers. The server applies the rules:
+  Health tool (the Claude and ChatGPT apps have one; GrokBot does not yet) and saves the numbers. The server applies the rules:
   dates in your time zone, kilograms to pounds, rounding, duplicates.
 - **"I weighed 182.4 this morning."** A weight you say yourself.
 - **Log your food in the app you like** (Carbon Diet Coach, MacroFactor or similar) and let it

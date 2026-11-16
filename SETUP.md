@@ -166,7 +166,7 @@ code. The page opens, empty.
    `https://health-mcp.YOUR-SUBDOMAIN.workers.dev/mcp`.
 3. Press **Add**, sign in with your email code, then press **Allow**.
 
-Other chat apps that can add a custom MCP connector (Grok, ChatGPT and others) use the same
+Other chat apps that can add a custom MCP connector (ChatGPT, GrokBot and others) use the same
 address. They all share the same record.
 
 Then, in the Claude app on your iPhone: **"Update my health page."** It reads Apple Health and
